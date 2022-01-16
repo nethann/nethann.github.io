@@ -6,6 +6,6 @@ const fetchDate = () => {
     let getHour = fetchDate.getHours();
 
     var message; 
-    message = getHour >= 12 ? title.innerHTML = 'Good Evening..' : 'Good Morning..'
+    message = getHour <= 12 ? title.innerHTML = 'Good Morning..' : title.innerHTML = 'Good Evening..'
 }
 fetchDate();
