@@ -194,12 +194,9 @@ body{
 @media screen and (max-width: 980px) {
     .information-container{
         background-color: transparent;
-        height: 100vh;
+        height: 130vh;
     }
 
-    .crd1{
-        margin-top: 170px;
-    }
 
     .container{
         width: 100%;
