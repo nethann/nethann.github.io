@@ -8,4 +8,6 @@ const fetchDate = () => {
     var message; 
     message = getHour <= 12 ? title.innerHTML = 'Good Morning..' : title.innerHTML = 'Good Evening..'
 }
+
+
 fetchDate();
