@@ -193,7 +193,7 @@ body{
 
 @media screen and (max-width: 980px) {
     .information-container{
-        background-color: transparent;
+        background-color: pink;
         height: 130vh;
     }
 
@@ -223,7 +223,6 @@ body{
     .holder2{
         position: absolute;
         background-color: transparent;
-        margin-top: 20px;
         top: 0;
     }
 
