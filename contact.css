@@ -253,7 +253,7 @@ section{
 }
 
 .gmail-class{
-  color: var(--clr-grey);
+  color: #F5F5DC;
   font-size: 20px;
   font-family: "Poppins";
 }
@@ -270,7 +270,7 @@ section{
 }
 
 .phone-class{
-  color: var(--clr-grey);
+  color: #F5F5DC;
   font-size: 20px;
   font-family: "Poppins";
 }

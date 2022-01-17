@@ -145,7 +145,7 @@ body{
 
 .context{
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--clr-grey);
+    color: #F5F5DC    ;
 }
 
 .click{
