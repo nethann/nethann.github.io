@@ -193,8 +193,9 @@ body{
 
 @media screen and (max-width: 980px) {
     .information-container{
-        background-color: pink;
+        background-color: transparent;
         height: 130vh;
+        position: relative;
     }
 
 
@@ -204,6 +205,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 900px;
     }
 
     .welcome{
@@ -215,12 +217,13 @@ body{
 
     .crd2{
         background-color: transparent;
-        width: 730px;
-        height: 400px;
+        width: 85%;
+        height: 350px;
         position: relative;
     }
 
     .holder2{
+        padding: 25px;
         position: absolute;
         background-color: transparent;
         top: 0;
@@ -229,12 +232,10 @@ body{
     .context{
         background-color: transparent;
         text-align: center;
-        padding: 5px;
     }
 
     .info{
         background-color: transparent;
         text-align: center;
-        padding: 5px;
     }
   }
