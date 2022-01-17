@@ -102,7 +102,8 @@ body{
 }
 
 .my_img{
-    width: 60%;
+    width: 100%;
+    border-radius: 5px;
 }
 
 .Name{
