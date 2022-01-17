@@ -191,3 +191,54 @@ body{
 }
 
 
+@media screen and (max-width: 980px) {
+    .information-container{
+        background-color: transparent;
+        height: 100vh;
+    }
+
+    .crd1{
+        margin-top: 170px;
+    }
+
+    .container{
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+
+    .crd2{
+        background-color: transparent;
+        width: 730px;
+        height: 400px;
+        position: relative;
+    }
+
+    .holder2{
+        position: absolute;
+        background-color: transparent;
+        margin-top: 20px;
+        top: 0;
+    }
+
+    .context{
+        background-color: transparent;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .info{
+        background-color: transparent;
+        text-align: center;
+        padding: 5px;
+    }
+  }
