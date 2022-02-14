@@ -219,3 +219,47 @@ body{
 
 
 }
+
+@media screen and (max-width: 480px) {
+
+    .information-container{
+        background-color: transparent;
+        height: 1000px;
+    }
+    .container{
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .crd1{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .crd2{
+        height: 425px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: transparent;
+        text-align: center;
+    }
+
+    .welcome{
+        font-size: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .context{
+        font-size: 16px;
+    }
+
+
+    .info{
+        font-size: 16px;
+    }
+
+
+}
