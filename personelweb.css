@@ -3,7 +3,7 @@
 
 body{
     background-color:var(---clr-bg-clr);
-    height: 105vh;
+    height: 100vh;
     background: linear-gradient(90deg, var(---clr-bg1) 40%, var(---clr-bg2) 40%);
 
 
@@ -11,14 +11,16 @@ body{
 
 :root{
 
-    ---clr-bg1: #263337;
-    ---clr-bg2: #3C434E;
+    ---clr-bg1: #D3D0CB;
+    ---clr-bg2: rgb(226, 224, 224);
 
 
 
-    --clr-white: #ffffff;
+    --clr-white: black;
     --clr-grey: #808080;
     --clr-dark-blue: #31697e;
+
+    --clr-dark-green: #8f957c;
 }
 
 
@@ -92,7 +94,7 @@ body{
 
 .crd1{
     position: relative;
-    background-color: #323c3f;
+    background-color: #D3D0CB;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,7 +123,7 @@ body{
 
 .icons{
     position: absolute;
-    background-color: #30383a;
+    background-color: #c5c2bc;
     bottom: 0;
     left: 0;
     right: 0;
@@ -166,7 +168,7 @@ body{
     background-color: transparent;
     display: flex;
     align-items: center;
-    color: var(--clr-dark-blue);
+    color: var(--clr-dark-green);
     font-size: 45px;
     font-family: 'Poppins';
 }
@@ -192,52 +194,28 @@ body{
 
 
 @media screen and (max-width: 980px) {
+
     .information-container{
         background-color: transparent;
-        height: 130vh;
-        position: relative;
+        height: 1000px;
     }
-
-
     .container{
-        width: 100%;
         background-color: transparent;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        height: 900px;
-    }
-
-    .welcome{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background-color: transparent;
         width: 100%;
     }
 
+    .crd1{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .crd2{
+        margin-left: auto;
+        margin-right: auto;
         background-color: transparent;
-        width: 85%;
-        height: 350px;
-        position: relative;
     }
 
-    .holder2{
-        padding: 25px;
-        position: absolute;
-        background-color: transparent;
-        top: 0;
-    }
 
-    .context{
-        background-color: transparent;
-        text-align: center;
-    }
-
-    .info{
-        background-color: transparent;
-        text-align: center;
-    }
-  }
+}

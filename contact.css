@@ -3,7 +3,7 @@
 
 body{
     background-color:var(---clr-bg-clr);
-    height: 105vh;
+    height: 100vh;
     background: linear-gradient(90deg, var(---clr-bg1) 40%, var(---clr-bg2) 40%);
 
 
@@ -19,22 +19,26 @@ body{
 :root{
 
 
-  ---clr-bg1: #263337;
-  ---clr-bg2: #3C434E;
+  ---clr-bg1: #D3D0CB;
+  ---clr-bg2: rgb(230, 228, 228);
 
 
 
-  --clr-white: #ffffff;
+  --clr-white: black;
   --clr-grey: #808080;
   --clr-dark-blue: #31697e;
 
+  --text-field-color: rgb(238, 238, 238);
+  --contact-list-names: #808080;
 
-  --clr-contact-icons: #2f847c;
-
-  --clr-dark-green: #A2B06D;
   --clr-dark-yellow:#bb9351;
 
   --clr-faded-denim: #778FA8;
+
+
+
+
+
 }
 
 
@@ -90,9 +94,6 @@ body{
 section{
     height: 90vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 1em;
     align-items: center;
     justify-content: center;
     background-color: transparent;
@@ -100,9 +101,31 @@ section{
     
 }
 
+.web-title{
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background-color: transparent;
+}
+
+.title{
+  font-family: "Nunito", "Arial";
+  font-size: 35px;
+  color: black;
+}
+
+.fa-address-book{
+  color: #8f957c;
+  font-size: 30px;
+}
+
+
 .container{
     width: 90%;
-    max-width: 500px;
+    width: 500px;
     margin: 0 auto;
     padding: 25px;
     /* border-radius: 5px;
@@ -122,7 +145,7 @@ section{
     margin-top: 20px;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
-    color: white;
+    color: var(--contact-list-names);
   }
 
 
@@ -132,10 +155,12 @@ section{
     width: 100%;
     padding: 5px;
     font-size: 15px;
-    border: 1px solid rgba(128, 128, 128, 0.199);
+    border: 0;
+    border-bottom: 2px solid black;
     margin-top: 5px;
-    background-color: #B8C3B5;
+    background-color: transparent;
     border-radius: 2px;
+    outline: none;
   }
   
   textarea {
@@ -203,74 +228,3 @@ section{
     }
   }
 
-.container-2{
-  height: auto;
-  width: 80%;
-  background: rgba(255, 255, 255, 0.13);
-  border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  
-  
-}
-
-.head{
-  font-family: 'Roboto', sans-serif;
-  color: var(--clr-faded-denim);
-  text-align: center;
-  font-size: 40px;
-  padding: 20px;
-
-}
-
-.contact-img{
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 300px;
-}
-
-
-.contact-icons{
-  padding: 15px;
-  background-color: transparent;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  text-align: center;
-
-}
-
-.gmail{
-  background-color: transparent;
-  padding: 10px;
-}
-
-.fa-envelope{
-  color: var(--clr-dark-green);
-  font-size: 30px;
-  padding: 10px;
-}
-
-.gmail-class{
-  color: #F5F5DC;
-  font-size: 20px;
-  font-family: "Poppins";
-}
-
-.phone{
-  background-color: transparent;
-  padding: 10px;
-}
-
-.fa-mobile-alt{
-  color: var(--clr-dark-green);
-  font-size: 30px;
-  padding: 10px;
-}
-
-.phone-class{
-  color: #F5F5DC;
-  font-size: 20px;
-  font-family: "Poppins";
-}

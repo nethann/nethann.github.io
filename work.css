@@ -3,7 +3,7 @@
 
 body{
     background-color:var(---clr-bg-clr);
-    height: 105vh;
+    height: 100vh;
     background: linear-gradient(90deg, var(---clr-bg1) 40%, var(---clr-bg2) 40%);
 
 
@@ -18,22 +18,24 @@ body{
 
 :root{
 
-    ---clr-bg1: #263337;
-    ---clr-bg2: #3C434E;
+    ---clr-bg1: #D3D0CB;
+    ---clr-bg2: rgb(226, 224, 224);
 
 
 
-    --clr-white: #ffffff;
+    --clr-white: black;
     --clr-grey: #808080;
     --clr-dark-blue: #31697e;
 
 
     --clr-contact-icons: #2f847c;
 
-    --clr-dark-green: #A2B06D;
+    --clr-dark-green: #8f957c;
     --clr-dark-yellow:#bb9351;
 
     --clr-faded-denim: #778FA8;
+
+    --class-title: #296e6c;
 }
 
 
@@ -80,14 +82,26 @@ body{
     transition: .3s;
 }
 
+.work-title{
+    background-color: transparent;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    align-items: center;
+    justify-content: center;
+}
 
-
-
+.workstl{
+    font-family: "Nunito", "Arial";
+    color: black;
+    font-size: 32px;
+}
 
 /* work page */
 
 .work{
-    height: 80vh;
+    height: 90vh;
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -138,14 +152,14 @@ body{
 }
 
 .class-title{
-    color: #778FA8;
+    color: var(--class-title);
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .context{
     font-family: Arial, Helvetica, sans-serif;
-    color: #F5F5DC    ;
+    color: grey;
 }
 
 .click{
