@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Luckiest+Guy&family=Nunito&family=Poppins:wght@300&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    ---clr-bg1: #dbd7d1;
+    ---clr-bg2: rgb(226, 224, 224);
+
+    /* profile picture card colors */ 
+    --clr-crd-color: #D3D0CB;
+    --clr-icons-div: #c5c2bc;
+
+    /* font colors */ 
+    --clr-dark-green: #8f957c;
+    --clr-greish-black: #2C2F32;
+
+
+    /*color grey */
+    --clr-grey-1:#6b6c6c;
+
+
+    /* numbers */
+    --margin-padding: 50px;
+
+}
+
+
+body{
+    height: 150vh;
+    background: linear-gradient(90deg, var(---clr-bg1) 40%, var(---clr-bg2) 40%);
+
+}
+
+
+
+/* ----------- SECTION 1 ------------- */ 
+
+
+/* the nav css */ 
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 20px;
+    opacity: 0.6;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.list{
+    display: inline-block;
+    background-color: transparent;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.link{
+    color: var(--clr-greish-black);
+    text-decoration: none;
+}
+
+
+
+/* the container css */ 
+.about-me{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card{
+    padding: 10px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    background-color: transparent;
+}
+
+.holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    width: 70%;
+    background-color: var(--clr-crd-color);
+
+    border-radius: 10px;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.icons-holder{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: var(--clr-icons-div);
+    gap: 2.5em;
+
+    font-size: 1.8vw;
+
+    border-radius: 0px 0px 10px 10px;
+}
+
+.social-link{
+    cursor: pointer;
+}
+
+.icons{
+    opacity: 0.5;
+    color: black;
+}
+
+.pfp{
+    padding: 15px 0px 0px 0px;
+    width: 75%;
+
+    border-radius: 8px;
+}
+
+/* about me section */ 
+.info{
+    padding: 10px;
+    gap: 1em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+
+    background-color: transparent;
+}
+
+.greeting{
+    width: 100%;
+
+    background-color: transparent;
+    text-align: center;
+
+
+    color: var(--clr-dark-green);
+    font-family: 'Poppins';
+    font-size: 3vw;
+}
+
+.par{
+    background-color: transparent;
+
+    font-size: 1.8vw;
+    font-family: 'Poppins';
+
+    opacity: 0.6;
+    
+}
+
+
+/* ----------- SECTION 2 ------------- */ 
+
+
+
+/* community involvement */
+
+.Community-involve{
+    display: flex;
+    flex-direction: column;
+
+    background-color: transparent;
+
+    margin-top: var(--margin-padding);
+
+    padding: 20px;
+}
+
+.Community-involve .title{
+    width: 100%;
+
+    text-align: center;
+
+    font-family: 'Poppins';
+    font-size: 2.4vw;
+
+    color: var(--clr-dark-green);
+}
+
+
+.Community{
+    background-color: transparent;
+
+    display: grid; 
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    /* keep watch on this */ 
+    gap: 1em 0em;
+    /* ----- */ 
+
+    padding: 10px;
+
+
+}
+
+.Community .card{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+
+    width: 90%;
+    background-color: white;
+
+    border-radius: 8px;
+}
+
+.Community .card .Image .card-images{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.Heading .Title{
+    font-family: 'Poppins';
+    font-size: 1.5vw;
+
+    color: var(--clr-dark-green);
+}
+
+.Description .info{
+    font-family: 'Poppins';
+    font-size: 1.2vw;
+
+    text-align: center;
+
+    color: var(--clr-greish-black);
+    opacity: 0.7;
+
+}
+
+
+
+/* ----------- SECTION 3 ------------- */ 
+
+
+
+/* songs list */ 
+.Songs-List{
+
+    padding: 5px;
+
+    border-radius: 10px;
+
+    margin-top: var(--margin-padding);
+
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+    width: 80%;
+    background-color: var(--clr-dark-green);
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    cursor: pointer;
+}
+
+.Songs-List .Title{
+    font-family: 'Nunito';
+    font-size: 1.2vw;
+
+    text-align: center;
+
+    color: white;
+
+
+}
+
+.Songs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+
+
+    padding: 10px; 
+}
+
+.Song-embed{
+    border-radius: 8px;
+    height: 320px;
+}
+
+/* when the max screen width less than 800px */ 
+@media screen and (max-width: 800px) {
+
+    /* about me and the pic section of the page */ 
+    .about-me{
+        display: flex;
+        flex-direction: column;
+
+
+        background-color: transparent;
+    }
+
+    .holder{
+        width: 50%;
+    }
+
+    .icons-holder{
+        font-size: 2.1vw;
+    }
+
+    .info{
+        text-align: left;
+    }
+
+    .greeting{
+        font-size: 4.5vw;
+    }
+
+    .par{
+        text-align: center;
+        width: 70%;
+        font-size: 2.7vw;
+    }
+
+
+    /* Community Cards */ 
+    .Community-involve .title{
+        font-size: 4vw;
+    }
+
+
+    .Community{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Community .card{
+        width: 70%;
+    }
+
+    .Heading .Title{
+        font-size: 3vw;
+    }
+
+
+    .Description .info{
+        font-size: 2.5vw;
+    
+    }
+
+
+    /* Songs Cards */ 
+    .Songs-List .Title{
+        font-size: 2vw;
+    }
+
+    .Songs{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+/* animations or custom styling */ 
+@keyframes bounce{
+    from{
+        transform: translateY(-1px);
+    }
+
+    to{
+        transform: translateY(3px);
+    }
+}
+
+.icons:hover{
+    animation: bounce 0.3s ease-in forwards infinite alternate;
+}
+
+.Community .card:hover{
+    transition: 0.3s ;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
