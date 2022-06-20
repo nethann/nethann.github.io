@@ -24,13 +24,13 @@
 
 
     /* numbers */
-    --margin-padding: 50px;
+    --margin-padding: 10px;
 
 }
 
 
 body{
-    height: 190vh;
+    height: 140vh;
     background: linear-gradient(90deg, var(---clr-bg1) 40%, var(---clr-bg2) 40%);
 
 }
@@ -378,6 +378,53 @@ body{
 }
 
 
+
+@media screen and (max-width: 600px) {
+    /* greeting and the paragraph */ 
+    .greeting{
+        font-size: 5vw;
+    }
+
+    .par{
+        width: 80%;
+        font-size: 3vw;
+    }
+
+    /* the community cards */ 
+
+    .Community-involve .title{
+        font-size: 4.5vw;
+    }
+
+    .Community .card{
+        width: 75%;
+    }
+
+    .Heading .Title{
+        font-size: 4vw;
+    }
+
+    .Description .info{
+        font-size: 3vw;
+    
+    }
+
+
+    /* the song title at the bottom */ 
+    .Songs-List .Title{
+        font-size: 2.3vw;
+    }
+
+
+    .holder{
+        width: 65%;
+    }
+
+    .icons-holder{
+        font-size: 3.5vw;
+    }
+
+}
 
 
 
