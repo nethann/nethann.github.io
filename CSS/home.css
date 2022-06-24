@@ -279,30 +279,6 @@ body{
     cursor: pointer;
 }
 
-.Songs-List .Title{
-    font-family: 'Nunito';
-    font-size: 1.2vw;
-
-    text-align: center;
-
-    color: white;
-
-
-}
-
-.Songs{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
-
-
-    padding: 10px; 
-}
-
-.Song-embed{
-    border-radius: 8px;
-    height: 320px;
-}
 
 /* when the max screen width less than 800px */ 
 @media screen and (max-width: 800px) {
