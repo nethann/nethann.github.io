@@ -30,7 +30,7 @@
 
 
 body{
-    height: 140vh;
+    height: 100vh;
     background: linear-gradient(90deg, var(---clr-bg1) 40%, var(---clr-bg2) 40%);
 
 }
