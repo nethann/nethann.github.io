@@ -253,32 +253,6 @@ body{
 
 
 
-/* ----------- SECTION 3 ------------- */ 
-
-
-
-/* songs list */ 
-.Songs-List{
-
-    padding: 5px;
-
-    border-radius: 10px;
-
-    margin-top: var(--margin-padding);
-
-
-    margin-left: auto;
-    margin-right: auto;
-
-
-    width: 80%;
-    background-color: var(--clr-dark-green);
-
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-    cursor: pointer;
-}
-
 
 /* when the max screen width less than 800px */ 
 @media screen and (max-width: 800px) {
@@ -338,18 +312,6 @@ body{
     .Description .info{
         font-size: 2.5vw;
     
-    }
-
-
-    /* Songs Cards */ 
-
-    .Songs-List .Title{
-        font-size: 2vw;
-    }
-
-    .Songs{
-        display: flex;
-        flex-direction: column;
     }
 }
 
