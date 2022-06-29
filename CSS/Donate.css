@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Luckiest+Guy&family=Nunito&family=Poppins:wght@300&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    ---clr-bg1: #dbd7d1;
+    ---clr-bg2: rgb(226, 224, 224);
+
+    /* profile picture card colors */ 
+    --clr-crd-color: #D3D0CB;
+    --clr-icons-div: #c5c2bc;
+
+    /* font colors */ 
+    --clr-dark-green: #8f957c;
+    --clr-greish-black: #2C2F32;
+
+
+    /*color grey */
+    --clr-grey-1:#6b6c6c;
+
+
+    /* numbers */
+    --margin-padding: 30px;
+
+}
+
+
+body{
+    height: 100vh;
+    background: linear-gradient(90deg, var(---clr-bg1) 40%, var(---clr-bg2) 40%);
+}
+
+
+
+/* ---------- SECTION 1 ---------- */ 
+
+/* the nav css */ 
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 20px;
+    opacity: 0.6;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.list{
+    display: inline-block;
+    background-color: transparent;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.link{
+    color: var(--clr-greish-black);
+    text-decoration: none;
+}
+
+
+
+
+/* ---------- SECTION 2 ------ */
+
+
+.Donate-container{
+    display: grid;
+    grid-template-columns: .8fr .6fr;
+
+    background: transparent;
+
+    text-align: center;
+
+    margin-bottom: var(--margin-padding);
+    
+
+}
+
+/* ------- first half -------- */ 
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    padding: 20px;
+
+
+}
+
+.content .title{
+    font-size: 4.5vw;
+
+    font-family: 'Roboto';
+    color: var(--clr-dark-green);
+
+    text-align: center;
+}
+
+.content .fa-piggy-bank{
+    font-size: 5vw;
+    color: var(--clr-grey-1);
+}
+
+.content .info{
+    font-size: 2vw;
+
+    font-family: 'Poppins';
+
+    text-align: center;
+
+    opacity: 0.5;
+}
+
+.goal{
+    text-align: center;
+}
+
+.goal .goal-title{
+    font-size: 2.2vw;
+
+    font-family: 'Nunito';
+
+    color: var(--clr-dark-green);
+}
+
+.goal .goal-info{
+    font-size: 1.8vw;
+
+    font-family: 'Poppins';
+
+    color: var(--clr-greish-black);
+}
+
+
+/* ------- second half -------- */ 
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+}
+
+.holder{
+    width: 90%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    gap: 1em;
+
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.top-half{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.fa-gift{
+    font-size: 5vw;
+
+    color: var(--clr-grey-1);
+    animation: gift-animation 0.3s ease-in forwards infinite alternate;
+}
+
+.paypalName{
+    font-size: 2vw;
+
+    font-family: 'Roboto';
+
+    color: var(--clr-dark-green);
+}
+
+.bottom-holder{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.why-donate{
+    font-family: 'Poppins';
+    font-size: 1.8vw;
+
+    color: var(--clr-greish-black);
+    opacity: 0.7;
+}
+
+.donate-image{
+    width: 35%;
+}
+
+
+/* -------- SECTION 3 --------- */ 
+.donated-people-container{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em 0em;
+
+    background-color: transparent;
+    padding: 10px;
+
+
+}
+
+.people-donated{
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+
+
+    background-color: rgba(255, 255, 255, 0.589);
+
+    padding: 10px;
+    border-radius: 8px;
+
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.fa-dollar-sign{
+    font-size: 2.5vw;
+
+    color: var(--clr-grey-1);
+}
+
+.user{
+    font-size: 1.8vw;
+
+    font-family: 'Roboto';
+    color: var(--clr-dark-green);
+}
+
+.thanks{
+    font-size: 1.6vw;
+
+    font-family: 'Nunito';
+
+    color: var(--clr-grey-1);
+}
+
+
+@media screen and (max-width: 800px) {
+    .Donate-container{
+        display: flex;
+        flex-direction: column;
+    
+        background: transparent;
+    }
+
+    /* first half */ 
+    .content{
+        padding: 0px;
+
+        margin-bottom: var(--margin-padding);
+    }
+    .content .title{
+        font-size: 7vw;
+    }
+
+    .content .fa-piggy-bank{
+        font-size: 8vw;
+    }
+
+    .content .info{
+        font-size: 3.3vw;
+    }
+
+    .goal .goal-title{
+        font-size: 3.8vw;
+    }
+    
+    .goal .goal-info{
+        font-size: 2.5vw;
+
+    }
+
+
+    /* second half */ 
+    .holder{
+        width: 50%;
+        padding: 10px;
+    }
+
+    .fa-gift{
+        font-size: 6vw;
+    }
+    
+    .paypalName{
+        font-size: 3vw;
+
+    }
+    
+    .why-donate{
+        font-size: 2.2vw;
+    }
+
+    .donate-image{
+        width: 40%;
+    }
+
+
+    /* -------- SECTION 3 (Donated people cards) --------- */ 
+
+    .donated-people-container{
+        display: flex;
+        flex-direction: column;
+
+        width: 50%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fa-dollar-sign{
+        font-size: 4.5vw;
+    }
+    
+    .user{
+        font-size: 3.2vw;
+    }
+    
+    .thanks{
+        font-size: 2.6vw;
+    }
+}
+
+
+
+/* animation */ 
+@keyframes gift-animation{
+    /* from{
+        transform: translateY(-1px);
+        transform: rotateX(20deg);
+    }
+
+    to{
+        transform: translateY(3px);
+    } */
+
+    0%{
+        transform: translateY(-1px);
+        transform: rotateX(20deg);
+    }
+
+    50%{
+        transform: rotateY(12deg);
+    }
+
+    100%{
+        transform: translateY(3px);
+    }
+}
+
+
+.people-donated:hover{
+    transform: translateY(2px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
