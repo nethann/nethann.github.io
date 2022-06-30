@@ -180,7 +180,7 @@ body{
     font-size: 5vw;
 
     color: var(--clr-grey-1);
-    animation: gift-animation 0.3s ease-in forwards infinite alternate;
+    /* animation: gift-animation 0.3s ease-in infinite alternate; */
 }
 
 .paypalName{
@@ -376,6 +376,7 @@ body{
         transform: translateY(3px);
     }
 }
+
 
 
 .people-donated:hover{
