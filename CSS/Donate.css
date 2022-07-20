@@ -227,6 +227,10 @@ body{
 
 
 @media screen and (max-width: 800px) {
+    .list{
+        padding: 15px;
+    }
+    
     .Donate-container{
         display: flex;
         flex-direction: column;
