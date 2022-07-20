@@ -67,6 +67,12 @@ body{
     text-decoration: none;
 }
 
+.contact{
+    border: 2px solid var(--clr-dark-green);
+    padding: 10px;
+    border-radius: 5px;
+}
+
 
 
 /* the container css */ 
@@ -262,7 +268,7 @@ body{
         font-size: 2.5vw;
     }
     .list{
-        font-size: 2.5vw;
+        font-size: 2.3vw;
     }
 
     .about-me{
@@ -327,10 +333,10 @@ body{
 @media screen and (max-width: 600px) {
     /* greeting and the paragraph */ 
     .Name{
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
     .list{
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
 
     .greeting{
