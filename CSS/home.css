@@ -113,7 +113,7 @@ body{
     background-color: var(--clr-icons-div);
     gap: 2.5em;
 
-    font-size: 1.8vw;
+    font-size: 2vw;
 
     border-radius: 0px 0px 10px 10px;
 }
@@ -258,6 +258,13 @@ body{
 @media screen and (max-width: 800px) {
 
     /* about me and the pic section of the page */ 
+    .Name{
+        font-size: 2.5vw;
+    }
+    .list{
+        font-size: 2.5vw;
+    }
+
     .about-me{
         display: flex;
         flex-direction: column;
@@ -271,7 +278,7 @@ body{
     }
 
     .icons-holder{
-        font-size: 2.1vw;
+        font-size: 2.5vw;
     }
 
     .info{
@@ -319,6 +326,13 @@ body{
 
 @media screen and (max-width: 600px) {
     /* greeting and the paragraph */ 
+    .Name{
+        font-size: 3vw;
+    }
+    .list{
+        font-size: 3vw;
+    }
+
     .greeting{
         font-size: 5vw;
     }

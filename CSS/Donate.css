@@ -197,16 +197,10 @@ body{
     gap: 2em;
 }
 
-.why-donate{
-    font-family: 'Poppins';
-    font-size: 1.8vw;
 
-    color: var(--clr-greish-black);
-    opacity: 0.7;
-}
 
 .donate-image{
-    width: 35%;
+    width: 100%;
 }
 
 
@@ -223,46 +217,7 @@ body{
 
 }
 
-.people-donated{
-    width: 90%;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5em;
-
-
-    background-color: rgba(255, 255, 255, 0.589);
-
-    padding: 10px;
-    border-radius: 8px;
-
-    text-align: center;
-
-    cursor: pointer;
-}
-
-.fa-dollar-sign{
-    font-size: 2.5vw;
-
-    color: var(--clr-grey-1);
-}
-
-.user{
-    font-size: 1.8vw;
-
-    font-family: 'Roboto';
-    color: var(--clr-dark-green);
-}
-
-.thanks{
-    font-size: 1.6vw;
-
-    font-family: 'Nunito';
-
-    color: var(--clr-grey-1);
-}
 
 
 @media screen and (max-width: 800px) {
@@ -315,39 +270,12 @@ body{
         font-size: 3vw;
 
     }
-    
-    .why-donate{
-        font-size: 2.2vw;
-    }
 
     .donate-image{
-        width: 40%;
+        width: 90%;
     }
 
 
-    /* -------- SECTION 3 (Donated people cards) --------- */ 
-
-    .donated-people-container{
-        display: flex;
-        flex-direction: column;
-
-        width: 50%;
-
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .fa-dollar-sign{
-        font-size: 4.5vw;
-    }
-    
-    .user{
-        font-size: 3.2vw;
-    }
-    
-    .thanks{
-        font-size: 2.6vw;
-    }
 }
 
 
