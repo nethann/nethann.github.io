@@ -1,6 +1,6 @@
 // going to display the greeting by the time
 
-let greetingTxt = document.querySelector('.greeting');
+let greetingTxt = document.getElementById('Title');
 
 
 var CurrentDate = new Date();

@@ -1,417 +1,591 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Luckiest+Guy&family=Nunito&family=Poppins:wght@300&family=Roboto&display=swap');
-
-* {
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Luckiest+Guy&family=Nunito&family=Poppins:wght@300;500;600;700;800;900&family=Roboto&display=swap');* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 :root{
-    ---clr-bg1: #dbd7d1;
-    ---clr-bg2: rgb(226, 224, 224);
+    ---clr-bg1: #dae2d5;
 
-    /* profile picture card colors */ 
-    --clr-crd-color: #D3D0CB;
-    --clr-icons-div: #c5c2bc;
+    --clr-bg2: #ffffff;
+
+    /* cool colors */ 
+    --clr-Blue: #5865f2;
+    --clr-light-white: #f2f3f1;
+    --clr-cyan: #01bac6;
+
 
     /* font colors */ 
     --clr-dark-green: #8f957c;
-    --clr-greish-black: #2C2F32;
+    --clr-dark-green-darker: #71765f;
+    --clr-dark-red: #800020;
+    --clr-dark-blue: #007cb2;
+    --clr-teal-green: #326872;
+
+
+    --clr-black: black;
+    --clr-white: white; 
 
 
     /*color grey */
-    --clr-grey-1:#6b6c6c;
+    --clr-grey-1:#9d9d9d;
+    
+
+    /* button colors */ 
+    --clr-crimson: #DF362D;
 
 
     /* numbers */
+    --nav-font-size: 15px; 
     --margin-padding: 10px;
 
-}
+    --content-holder-margin: 30px;
+    --contact-padding: 20px; 
 
+    --About_Section-padding: 10px;
+
+    --about-padding: 30px;
+    --card-padding: 20px;
+
+}
 
 body{
-    height: 100vh;
-    background: linear-gradient(90deg, var(---clr-bg1) 40%, var(---clr-bg2) 40%);
-
+    background-color: var(--clr-bg2);
 }
 
 
 
-/* ----------- SECTION 1 ------------- */ 
-
-
-/* the nav css */ 
 .nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: transparent;
+    background-color: var(---clr-bg1);
+    font-size: var(--nav-font-size);
     padding: 20px;
-    opacity: 0.6;
     font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: var(--clr-black);
 }
 
 
-
+/* nav - bar */ 
 .list{
     display: inline-block;
     background-color: transparent;
     text-align: center;
     padding: 20px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: var(--nav-font-size);
 }
 
 .link{
-    color: var(--clr-greish-black);
+    color: var(--clr-black);
     text-decoration: none;
 }
 
-.contact{
-    border: 2px solid var(--clr-dark-green);
-    padding: 10px;
-    border-radius: 5px;
-}
+
+/* Home-Cover */ 
 
 
 
-/* the container css */ 
-.about-me{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.card{
-    padding: 10px;
-
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
-    background-color: transparent;
-}
-
-.holder{
+/* overall design */ 
+.Home-Cover{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
-    width: 70%;
-    background-color: var(--clr-crd-color);
+    gap: 1.5em;
 
-    border-radius: 10px;
+    text-align: center;
 
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    height: 90vh;
+    background-color: var(---clr-bg1);
 }
 
-.icons-holder{
+.Home-Cover .Title{
+    font-family: 'Poppins';
+    font-size: 6vw;
+    font-weight: bold;
+    color: var(--clr-black);
+}
+
+.Logo{
     width: 100%;
-    height: 100%;
-    padding: 10px;
+    border-radius: 8px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    background-color: var(--clr-icons-div);
-    gap: 2.5em;
-
-    font-size: 2vw;
-
-    border-radius: 0px 0px 10px 10px;
-}
-
-.social-link{
     cursor: pointer;
 }
 
-.icons{
-    opacity: 0.5;
-    color: black;
+
+.Home-Cover .Info{
+    font-family: 'Poppins';
+    font-size: 1.7vw;
+    font-weight: 300;
+    color: var(--clr-black);
 }
 
-.pfp{
-    padding: 15px 0px 0px 0px;
-    width: 75%;
 
-    border-radius: 8px;
+
+
+
+
+
+
+
+.A-tag-home{
+    color: var(--clr-black);
+
+
+    text-decoration: none;
 }
 
-/* about me section */ 
-.info{
-    padding: 10px;
-    gap: 1em;
+
+
+/* Content for about us */ 
+.Content-holder{
+    margin-top: var(--content-holder-margin); 
+    margin-bottom: var(--content-holder-margin); 
 
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--clr-bg2);
+
+
+} 
+
+.About-Section{
+
+    width: 65%;
+
+
+    display: flex;
     flex-direction: column;
+    gap: 1em;
 
-
+    text-align: left;
 
     background-color: transparent;
 }
 
-.greeting{
-    width: 100%;
+
+.Grid-Sections{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.About-Section-Special{
+
+    width: 65%;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    text-align: left;
 
     background-color: transparent;
+}
+
+
+/* special sections for the about-section */ 
+.Border-Bottom{
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--clr-grey-1);
+}
+
+.Special-Alignment{
     text-align: center;
-
-
-    color: var(--clr-dark-green);
-    font-family: 'Poppins';
-    font-size: 3vw;
 }
 
-.par{
-    background-color: transparent;
 
-    font-size: 1.8vw;
+.Special-Section{
+    text-align: right;
+}
+
+.Special-Section-Padding{
     font-family: 'Poppins';
+    font-size: 2vw;
 
-    opacity: 0.6;
+    color: var(--clr-black);
+}
+
+.Special-Color-1{
+    font-family: 'Poppins';
+    font-size: 2vw;
+    font-weight: 500;
+
+    padding-bottom: var(--About_Section-padding);
+
+    color: var(--clr-teal-green);
+    opacity: 0.7;
+}
+
+.Special-Info{
+    font-family: 'Poppins';
+    font-size: 1.3vw;
+    font-weight: 300;
+    color: var(--clr-black);
+}
+
+
+
+/* -------------------------------------- */ 
+
+.About-Section .Section{
     
-}
-
-
-/* ----------- SECTION 2 ------------- */ 
-
-
-
-/* community involvement */
-
-.Community-involve{
-    display: flex;
-    flex-direction: column;
-
-    background-color: transparent;
-
-    margin-top: var(--margin-padding);
-
-    padding: 20px;
-}
-
-.Community-involve .title{
-    width: 100%;
-
-    text-align: center;
 
     font-family: 'Poppins';
-    font-size: 2.4vw;
+    font-size: 2vw;
+    font-weight: 500;
 
-    color: var(--clr-dark-green);
-}
+    padding-bottom: var(--About_Section-padding);
 
-
-.Community{
-    background-color: transparent;
-
-    display: grid; 
-    place-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-
-    /* keep watch on this */ 
-    gap: 1em 0em;
-    /* ----- */ 
-
-    padding: 10px;
-
-
-}
-
-.Community .card{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-
-    width: 90%;
-    background-color: white;
-
-    border-radius: 8px;
-}
-
-.Community .card .Image .card-images{
-    width: 100%;
-    border-radius: 10px;
-}
-
-.Heading .Title{
-    font-family: 'Poppins';
-    font-size: 1.5vw;
-
-    color: var(--clr-dark-green);
-}
-
-.Description .info{
-    font-family: 'Poppins';
-    font-size: 1.2vw;
-
-    text-align: center;
-
-    color: var(--clr-greish-black);
+    color: var(--clr-black);
     opacity: 0.7;
 
+
+}
+
+.About-Section .Info{
+
+
+    font-family: 'Poppins';
+    font-size: 1.3vw;
+    font-weight: 300;
+
+    color: var(--clr-black);
+
 }
 
 
 
-
-/* when the max screen width less than 800px */ 
-@media screen and (max-width: 800px) {
-
-    .list{
-        padding: 15px;
-    }
+/* modifying cards */ 
 
 
-    /* about me and the pic section of the page */ 
-    .Name{
-        font-size: 2.5vw;
-    }
-    .list{
-        font-size: 2.3vw;
-    }
+/* contact card */ 
 
-    .about-me{
-        display: flex;
-        flex-direction: column;
+.crd-5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    width: 60%;
+
+    gap: 1em;
+
+    background-color:var(--clr-light-white);
+
+    border-radius: 10px;
+    padding: var(--contact-padding);
+
+    cursor: pointer;
+}
 
 
+/* icons for contact card */ 
+.social-media-list{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.Social-Icons{
+    cursor: pointer;
+
+    color: var(--clr-black);
+
+    font-size: 1.8vw;
+}
+
+
+
+/* --------- */ 
+
+.Info-Special{
+
+    font-family: 'Poppins';
+    font-size: 2.1vw;
+    font-weight: 300;
+
+    color: var(--clr-black);
+}
+
+
+.about-cards{
+    width: 80%;
+
+
+    background-color: transparent;
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+
+    place-items: center;
+
+    padding: 10px;
+}
+
+
+.card{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5em;
+
+    background-color: var(--clr-light-white);
+
+    border-radius: 10px;
+
+    padding: var(--card-padding);
+
+    cursor: pointer;
+
+}
+
+.card-icons{ 
+    font-size: 2.5vw;
+}
+
+.card-title{
+    text-align: center;
+    font-size: 1.5vw;
+
+    font-family: 'Poppins';
+    font-weight: 300;
+}
+
+.basic-info{
+    text-align: center;
+
+    font-size: 1.3vw;
+
+    font-family: 'Poppins';
+    font-weight: 300;
+}
+
+
+
+/* animations */ 
+
+/* changing the background of the button */ 
+.Buttons:hover{
+    background-color: var(--clr-black);
+
+    border-radius: 3px;
+}
+
+/* hovering the color of the button */ 
+.Buttons:hover .A-tag-home{
+    color: var(--clr-white);
+}
+
+/* when clicked social media icons */ 
+.Social-Icons:active{
+    transform: translateY(2px);
+}
+
+
+/* navigation bar list color white */ 
+.list:hover .link{
+    animation: ease-in;
+    transition: 0.2s;
+    color: var(--clr-dark-brown);
+}
+
+
+.card:hover{
+    transition: 0.1s ease-in;
+    transform: translateY(3px);
+}
+
+@media screen and (max-width: 1000px) {
+    body{
         background-color: transparent;
     }
 
-    .holder{
-        width: 50%;
+    .Home-Cover .Title{
+        font-size: 5.5vw;
     }
 
-    .icons-holder{
-        font-size: 2.5vw;
-    }
-
-    .info{
-        text-align: left;
-    }
-
-    .greeting{
-        font-size: 4.5vw;
-    }
-
-    .par{
-        text-align: center;
-        width: 70%;
-        font-size: 2.7vw;
-    }
-
-
-    /* Community Cards */ 
-    .Community-involve .title{
-        font-size: 4vw;
-    }
-
-
-    .Community{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .Community .card{
-        width: 70%;
-    }
-
-    .Heading .Title{
-        font-size: 3vw;
-    }
-
-
-    .Description .info{
-        font-size: 2.5vw;
-    
-    }
-}
-
-
-
-@media screen and (max-width: 600px) {
-    .list{
-        padding: 10px;
-    }
-    
-    /* greeting and the paragraph */ 
-    .Name{
-        font-size: 2.5vw;
-    }
-    .list{
-        font-size: 2.5vw;
-    }
-
-    .greeting{
-        font-size: 5vw;
-    }
-
-    .par{
-        width: 80%;
-        font-size: 3vw;
-    }
-
-    /* the community cards */ 
-
-    .Community-involve .title{
-        font-size: 4.5vw;
-    }
-
-    .Community .card{
-        width: 75%;
-    }
-
-    .Heading .Title{
-        font-size: 4vw;
-    }
-
-    .Description .info{
-        font-size: 3vw;
-    
-    }
-
-
-    /* the song title at the bottom */ 
-    .Songs-List .Title{
+    .Home-Cover .Info{
         font-size: 2.3vw;
     }
 
-
-    .holder{
-        width: 65%;
+    .About-Section{
+        width: 90%;
     }
 
-    .icons-holder{
+    .About-Section  .Section{
+        font-size: 2.5vw;
+    }
+
+    .About-Section  .Info{
+        font-size: 2vw;
+    }
+
+    .Info-Special{
+        font-size: 2.5vw;
+    }
+
+    .about-cards{
+        width: 90%;
+    }
+}
+
+
+
+@media screen and (max-width: 800px) {
+    body{
+        background-color: transparent;
+    }
+
+    .Name{
+        font-size: 2.3vw;
+    }
+
+    .list{
+        font-size: 2.3vw;
+    }
+
+    .Logo{
+        width: 100%;
+    }
+
+    .Home-Cover .Title{
+        font-size: 6.5vw;
+    }
+
+    .Home-Cover .Info{
+        font-size: 3vw;
+    }
+
+    .About-Section{
+        width: 90%;
+    }
+
+    .About-Section  .Section{
+        font-size: 2.5vw;
+    }
+
+    .About-Section  .Info{
+        font-size: 2vw;
+    }
+
+    .Info-Special{
+        font-size: 2.5vw;
+    }
+
+    .about-cards{
+        width: 50%;
+
+
+        background-color: transparent;
+    
+    
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    
+        place-items: center;
+    
+        padding: 10px;
+
+    }
+
+    .card-title{
+        font-size: 2.5vw;
+    }
+
+    .basic-info{
+        font-size: 1.8vw;
+    }
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    body{
+        background-color: transparent;
+    }
+
+    .Name{
+        font-size: 2.8vw;
+    }
+
+    .list{
+        font-size: 2.8vw;
+    }
+
+    .Logo{
+        width: 100%;
+    }
+
+    .Home-Cover .Title{
+        font-size: 7.5vw;
+    }
+
+    .Home-Cover .Info{
         font-size: 3.5vw;
     }
 
-}
-
-
-
-/* animations or custom styling */ 
-@keyframes bounce{
-    from{
-        transform: translateY(-1px);
+    .About-Section{
+        width: 90%;
     }
 
-    to{
-        transform: translateY(3px);
+    .About-Section  .Section{
+        font-size: 4.5vw;
     }
-}
 
-.icons:hover{
-    animation: bounce 0.3s ease-in forwards infinite alternate;
-}
+    .About-Section  .Info{
+        font-size: 3vw;
+    }
 
-.Community .card:hover{
-    transition: 0.3s ;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    cursor: pointer;
+    .Info-Special{
+        font-size: 4.5vw;
+    }
+
+    .about-cards{
+        width: 70%;
+
+
+        background-color: transparent;
+    
+    
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    
+        place-items: center;
+    
+        padding: 10px;
+
+    }
+
+    .card-title{
+        font-size: 4vw;
+    }
+
+    .basic-info{
+        font-size: 3vw;
+    }
+
+
 }

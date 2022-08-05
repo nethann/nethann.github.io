@@ -1,288 +1,438 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Luckiest+Guy&family=Nunito&family=Poppins:wght@300&family=Roboto&display=swap');
-
-* {
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Luckiest+Guy&family=Nunito&family=Poppins:wght@300;500;600;700;800;900&family=Roboto&display=swap');* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 :root{
-    ---clr-bg1: #dbd7d1;
-    ---clr-bg2: rgb(226, 224, 224);
+    ---clr-bg1: #dae2d5;
 
-    /* profile picture card colors */ 
-    --clr-crd-color: #D3D0CB;
-    --clr-icons-div: #c5c2bc;
+    --clr-bg2: #ffffff;
+
+    /* cool colors */ 
+    --clr-Blue: #5865f2;
+    --clr-light-white: #dae2d5;
+    --clr-cyan: #01bac6;
+
 
     /* font colors */ 
     --clr-dark-green: #8f957c;
-    --clr-greish-black: #2C2F32;
+    --clr-dark-green-darker: #71765f;
+    --clr-dark-red: #800020;
+    --clr-dark-blue: #007cb2;
+    --clr-teal-green: #326872;
+
+
+    --clr-black: black;
+    --clr-white: white; 
 
 
     /*color grey */
-    --clr-grey-1:#6b6c6c;
+    --clr-grey-1:#9d9d9d;
+    
+
+    /* button colors */ 
+    --clr-crimson: #DF362D;
 
 
     /* numbers */
-    --margin-padding: 30px;
+    --nav-font-size: 15px; 
+    --margin-padding: 10px;
+
+    --content-holder-margin: 30px;
+    --contact-padding: 20px; 
+
+    --About_Section-padding: 10px;
+
+    --about-padding: 30px;
+    --card-padding: 30px;
 
 }
-
 
 body{
-    height: 100vh;
-    background: linear-gradient(90deg, var(---clr-bg1) 40%, var(---clr-bg2) 40%);
+    background-color: var(--clr-bg2);
 }
 
 
 
-/* ---------- SECTION 1 ---------- */ 
-
-/* the nav css */ 
 .nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: transparent;
+    background-color: var(---clr-bg1);
+    font-size: var(--nav-font-size);
     padding: 20px;
-    opacity: 0.6;
     font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: var(--clr-black);
 }
 
 
-
+/* nav - bar */ 
 .list{
     display: inline-block;
     background-color: transparent;
     text-align: center;
     padding: 20px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: var(--nav-font-size);
 }
 
 .link{
-    color: var(--clr-greish-black);
+    color: var(--clr-black);
     text-decoration: none;
 }
 
-.contact{
-    border: 2px solid var(--clr-dark-green);
-    padding: 10px;
-    border-radius: 5px;
-}
+
+/* Home-Cover */ 
 
 
 
-
-/* ---------- SECTION 2 ------ */
-
-
-.Donate-container{
-    display: grid;
-    grid-template-columns: .8fr .6fr;
-
-    background: transparent;
-
-    text-align: center;
-
-    margin-bottom: var(--margin-padding);
-    
-
-}
-
-/* ------- first half -------- */ 
-.content{
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-
-    padding: 20px;
-
-
-}
-
-.content .title{
-    font-size: 4.5vw;
-
-    font-family: 'Roboto';
-    color: var(--clr-dark-green);
-
-    text-align: center;
-}
-
-.content .fa-piggy-bank{
-    font-size: 5vw;
-    color: var(--clr-grey-1);
-}
-
-.content .info{
-    font-size: 2vw;
-
-    font-family: 'Poppins';
-
-    text-align: center;
-
-    opacity: 0.5;
-}
-
-.goal{
-    text-align: center;
-}
-
-.goal .goal-title{
-    font-size: 2.2vw;
-
-    font-family: 'Nunito';
-
-    color: var(--clr-dark-green);
-}
-
-.goal .goal-info{
-    font-size: 1.8vw;
-
-    font-family: 'Poppins';
-
-    color: var(--clr-greish-black);
-}
-
-
-/* ------- second half -------- */ 
-.card{
+/* overall design */ 
+.Home-Cover{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 1.5em;
+
+    text-align: center;
+
+
+    height: 90vh;
+    background-color: var(---clr-bg1);
+}
+
+.Home-Cover .Title{
+    font-family: 'Poppins';
+    font-size: 6vw;
+    font-weight: bold;
+    color: var(--clr-black);
+}
+
+.Logo{
+    width: 30%;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+
+.Home-Cover .Info{
+    font-family: 'Poppins';
+    font-size: 1.7vw;
+    font-weight: 300;
+    color: var(--clr-black);
+}
+
+
+
+
+
+
+
+
+
+.A-tag-home{
+    color: var(--clr-black);
+
+
+    text-decoration: none;
+}
+
+
+
+/* Content for about us */ 
+.Content-holder{
+    margin-top: var(--content-holder-margin); 
+    margin-bottom: var(--content-holder-margin); 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+
+} 
+
+.About-Section{
+
+    width: 65%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    text-align: left;
 
     background-color: transparent;
 }
 
-.holder{
-    width: 90%;
-    height: 100%;
 
+.Grid-Sections{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.About-Section-Special{
+
+    width: 100%;
+    height: 85vh;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+    text-align: left;
+
+    background-color: transparent;
+}
+
+
+/* special sections for the about-section */ 
+.Border-Bottom{
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--clr-grey-1);
+}
+
+.Special-Alignment{
+    text-align: center;
+}
+
+
+.Special-Section{
+    text-align: right;
+}
+
+.Special-Section-Padding{
+    font-family: 'Poppins';
+    font-size: 2vw;
+
+    color: var(--clr-black);
+}
+
+.Special-Color-1{
+    font-family: 'Poppins';
+    font-size: 2vw;
+    font-weight: 500;
+
+    padding-bottom: var(--About_Section-padding);
+
+    color: var(--clr-teal-green);
+    opacity: 0.7;
+}
+
+.Special-Info{
+    font-family: 'Poppins';
+    font-size: 1.3vw;
+    font-weight: 300;
+    color: var(--clr-black);
+}
+
+
+
+/* -------------------------------------- */ 
+
+.About-Section .Section{
+    
+
+    font-family: 'Poppins';
+    font-size: 2vw;
+    font-weight: 500;
+
+    padding-bottom: var(--About_Section-padding);
+
+    color: var(--clr-dark-green);
+    opacity: 0.7;
+
+
+}
+
+.About-Section .Info{
+
+
+    font-family: 'Poppins';
+    font-size: 1.3vw;
+    font-weight: 300;
+
+    color: var(--clr-black);
+
+}
+
+
+
+/* modifying cards */ 
+
+
+/* contact card */ 
+
+.crd-5{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     text-align: center;
+    flex-direction: column;
+
+    width: 40%;
 
     gap: 1em;
 
-    background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background:var(--clr-bg2);
+    box-shadow:  6px 6px 12px #d9d9d9,
+                 -6px -6px 12px #ffffff;
 
+    padding: var(--contact-padding);
+
+    cursor: pointer;
 }
 
-.top-half{
+
+/* icons for contact card */ 
+.social-media-list{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 2em;
 }
 
-.fa-gift{
-    font-size: 5vw;
+.Social-Icons{
+    cursor: pointer;
 
-    color: var(--clr-grey-1);
-    /* animation: gift-animation 0.3s ease-in infinite alternate; */
+    color: var(--clr-black);
+
+    font-size: 1.8vw;
 }
 
-.paypalName{
-    font-size: 2vw;
 
-    font-family: 'Roboto';
+
+/* --------- */ 
+
+.Info-Special{
+
+    font-family: 'Poppins';
+    font-size: 2.1vw;
+    font-weight: 300;
 
     color: var(--clr-dark-green);
 }
 
-.bottom-holder{
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-}
 
+.about-cards{
+    width: 80%;
 
-
-.donate-image{
-    width: 100%;
-}
-
-
-/* -------- SECTION 3 --------- */ 
-.donated-people-container{
-    display: grid;
-    place-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1em 0em;
 
     background-color: transparent;
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+
+    place-items: center;
+
     padding: 10px;
+}
 
 
+.card{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5em;
+
+    background-color: var(--clr-light-white);
+
+    border-radius: 10px;
+
+    padding: var(--card-padding);
+
+    cursor: pointer;
+
+}
+
+.card-icons{ 
+    font-size: 2.5vw;
+}
+
+.card-title{
+    text-align: center;
+    font-size: 1.3vw;
+
+    font-family: 'Poppins';
+    font-weight: 300;
+}
+
+.basic-info{
+    text-align: center;
+
+    font-size: 1vw;
+
+    font-family: 'Poppins';
+    font-weight: 300;
+}
+
+
+
+/* animations */ 
+
+/* changing the background of the button */ 
+.Buttons:hover{
+    background-color: var(--clr-black);
+
+    border-radius: 3px;
+}
+
+/* hovering the color of the button */ 
+.Buttons:hover .A-tag-home{
+    color: var(--clr-white);
+}
+
+/* when clicked social media icons */ 
+.Social-Icons:active{
+    transform: translateY(2px);
+}
+
+
+/* navigation bar list color white */ 
+.list:hover .link{
+    animation: ease-in;
+    transition: 0.2s;
+    color: var(--clr-dark-brown);
+}
+
+
+.card:hover{
+    transition: 0.1s ease-in;
+    transform: translateY(3px);
 }
 
 
 
 
 @media screen and (max-width: 800px) {
+    .crd-5{
+        width: 60%;
+    }
+    .Name{
+        font-size: 2.3vw;
+    }
+
     .list{
-        padding: 15px;
-    }
-    
-    .Donate-container{
-        display: flex;
-        flex-direction: column;
-    
-        background: transparent;
+        font-size: 2.3vw;
     }
 
-    /* first half */ 
-    .content{
-        padding: 0px;
-
-        margin-bottom: var(--margin-padding);
-    }
-    .content .title{
-        font-size: 7vw;
-    }
-
-    .content .fa-piggy-bank{
-        font-size: 8vw;
-    }
-
-    .content .info{
-        font-size: 3.3vw;
-    }
-
-    .goal .goal-title{
-        font-size: 3.8vw;
-    }
-    
-    .goal .goal-info{
-        font-size: 2.5vw;
-
-    }
-
-
-    /* second half */ 
-    .holder{
-        width: 50%;
-        padding: 10px;
-    }
-
-    .fa-gift{
-        font-size: 6vw;
-    }
-    
-    .paypalName{
+    .Special-Section-Padding{
         font-size: 3vw;
-
-    }
-
-    .donate-image{
-        width: 90%;
     }
 
 
@@ -290,34 +440,24 @@ body{
 
 
 
-/* animation */ 
-@keyframes gift-animation{
-    /* from{
-        transform: translateY(-1px);
-        transform: rotateX(20deg);
+
+
+@media screen and (max-width: 500px) {
+
+    .crd-5{
+        width: 70%;
+    }
+    .Special-Section-Padding{
+        font-size: 3.5vw;
     }
 
-    to{
-        transform: translateY(3px);
-    } */
-
-    0%{
-        transform: translateY(-1px);
-        transform: rotateX(20deg);
+    .Name{
+        font-size: 2.8vw;
     }
 
-    50%{
-        transform: rotateY(12deg);
+    .list{
+        font-size: 2.8vw;
     }
 
-    100%{
-        transform: translateY(3px);
-    }
-}
 
-
-
-.people-donated:hover{
-    transform: translateY(2px);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
