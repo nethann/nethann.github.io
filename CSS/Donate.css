@@ -420,6 +420,15 @@ body{
 
 
 @media screen and (max-width: 800px) {
+
+    .Name{
+        font-size: 2vw;
+    }
+
+    .list{
+        font-size: 2vw;
+    }
+
     .crd-5{
         width: 60%;
     }
@@ -443,6 +452,14 @@ body{
 
 
 @media screen and (max-width: 500px) {
+
+    .Name{
+        font-size: 1.8vw;
+    }
+
+    .list{
+        font-size: 1.8vw;
+    }
 
     .crd-5{
         width: 70%;
