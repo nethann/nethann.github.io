@@ -24,6 +24,7 @@
 
     
     --clr-darker-blue: #2d394d;
+    --clr-blue-buttons: #263041;
     --clr-pink: #ff7a90;
     --clr-monk-blue: #49768d;
 
@@ -106,14 +107,14 @@ body{
 
 
     height: 90vh;
-    background-color: var(--clr-darker-blue);
+    background-color:var(--clr-darker-blue);
 }
 
 .Home-Cover .Title{
     font-family: 'Poppins';
     font-size: 6vw;
     font-weight: bold;
-    color: var(--clr-white);
+    color: var(--clr-black);
 }
 
 .Logo{
@@ -199,6 +200,23 @@ body{
     background-color: transparent;
 }
 
+.offers{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: transparent;
+}
+
+.offer-title{
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 1.3vw;
+    font-weight: 300;
+
+    color: var(--clr-white);
+}
+
+
 
 /* special sections for the about-section */ 
 .Border-Bottom{
@@ -219,7 +237,7 @@ body{
     font-family: 'Poppins';
     font-size: 2vw;
 
-    color: var(--clr-white);
+    color: var(--clr-pink);
 }
 
 .Special-Color-1{
@@ -238,6 +256,8 @@ body{
     font-size: 1.3vw;
     font-weight: 300;
     color: var(--clr-black);
+
+    cursor: pointer;
 }
 
 
@@ -278,6 +298,7 @@ body{
 /* contact card */ 
 
 .crd-5{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -293,7 +314,7 @@ body{
     box-shadow:  9px 9px 18px #263041,
                  -9px -9px 18px #344259;
 
-    padding: var(--contact-padding);
+    padding: 30px;
 
     cursor: pointer;
 }
@@ -309,7 +330,7 @@ body{
 .Social-Icons{
     cursor: pointer;
 
-    color: var(--clr-black);
+    color: var(--clr-Blue);
 
     font-size: 1.8vw;
 }
@@ -387,12 +408,29 @@ body{
     font-weight: 300;
 }
 
+.MailBtn{
+    border: 0px solid transparent;
+    padding: 0.8vw;
+
+    font-size: 1.3vw;
+
+    font-family: 'Poppins';
+    font-weight: 300;
+
+
+    border-radius: 5px;
+
+    background-color:var(--clr-blue-buttons);
+
+    color: var(--clr-white);
+
+    cursor: pointer;
+}
 
 
 /* animations */ 
 
 /* changing the background of the button */ 
-
 .Buttons:hover{
     background-color: var(--clr-black);
 
@@ -430,6 +468,7 @@ body{
 @media screen and (max-width: 800px) {
 
 
+
     .link{
         font-size: 2.3vw;
     }
@@ -451,6 +490,20 @@ body{
 
     .Special-Section-Padding{
         font-size: 3vw;
+    }
+
+
+    .offer-title{
+        font-size: 2vw;
+    }
+
+    .MailBtn{
+        font-size: 2vw;
+        padding: 2vw;
+    }
+
+    .Social-Icons{
+        font-size: 2.7vw;
     }
 
 
@@ -485,5 +538,19 @@ body{
         font-size: 2.8vw;
     }
 
+    .offer-title{
+        font-size: 2.5vw;
+    }
+
+    .MailBtn{
+        font-size: 2.5vw;
+        padding: 2vw;
+    }
+
+    .Social-Icons{
+        font-size: 3.3vw;
+    }
+
 
 }
+
