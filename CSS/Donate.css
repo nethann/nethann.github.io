@@ -94,6 +94,8 @@ body{
 
 
 
+
+
 /* overall design */ 
 .Home-Cover{
     display: flex;
@@ -219,7 +221,7 @@ body{
     font-family: 'Poppins';
     font-size: 2vw;
 
-    color: var(--clr-white);
+    color: var(--clr-pink);
 }
 
 .Special-Color-1{
