@@ -403,6 +403,36 @@ body{
     opacity: 0.6;
 }
 
+.detail{
+    width: 60%;
+    background-color: pink;
+
+    border: 0px solid transparent;
+    background-color: rgba(0, 0, 0, 0.197);
+
+    padding: 10px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    text-align: center;
+    font-family: "Poppins";
+    font-weight: 300;
+
+}
+
+.detail:hover{
+    transition: 0.05s ease-in;
+    transform: translateY(2px);
+}
+
+
+/* SLIDER ICONS IN THE HOME CSS PAGE IF WANTED TO EDIT IN FUTURE */ 
+
+
+/* CLASS "sitseFont" WILL BE PUT IN HOME CSS FILE DUE TO FONT CHANGEMENT /* 
+
 
 
 /* animations */ 
@@ -431,6 +461,8 @@ body{
     transition: 0.2s;
     color: var(--clr-pink);
 }
+
+
 
 
 
