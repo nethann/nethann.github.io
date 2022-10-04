@@ -212,7 +212,7 @@ body{
 .offer-title{
     text-align: center;
     font-family: 'Poppins';
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     font-weight: 300;
 
     color: var(--clr-white);
@@ -307,7 +307,7 @@ body{
     text-align: center;
     flex-direction: column;
 
-    width: 40%;
+    width: 50%;
 
     gap: 1em;
 
@@ -414,7 +414,7 @@ body{
     border: 0px solid transparent;
     padding: 0.8vw;
 
-    font-size: 1.3vw;
+    font-size: 1vw;
 
     font-family: 'Poppins';
     font-weight: 300;
@@ -496,16 +496,16 @@ body{
 
 
     .offer-title{
-        font-size: 2vw;
+        font-size: 2.3vw;
     }
 
     .MailBtn{
-        font-size: 2vw;
+        font-size: 1.7vw;
         padding: 2vw;
     }
 
     .Social-Icons{
-        font-size: 2.7vw;
+        font-size: 3.3vw;
     }
 
 
@@ -541,7 +541,7 @@ body{
     }
 
     .offer-title{
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
 
     .MailBtn{
@@ -550,7 +550,7 @@ body{
     }
 
     .Social-Icons{
-        font-size: 3.3vw;
+        font-size: 4vw;
     }
 
 

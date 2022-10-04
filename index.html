@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nethan Nagendran</title>
     <link rel="stylesheet" href="/CSS/home.css" type="text/css">
+    <link rel="stylesheet" href="/CSS/Special-CSS/Home/slider.css" type="text/css">
+    <link rel="stylesheet" href="/CSS/Special-CSS/Home/googleSites.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ce008e5c05.js" crossorigin="anonymous"></script>
 
@@ -70,9 +72,10 @@
                 <p class="Special-Section Section">Interested in programming?</p>
 
                 <div class="Grid-Sections">
-                    <img src="/Resources/Images/Home/Photos/NagendranLogo3.jpeg" alt="" class="Nagendran_Logo">
+                    <img src="/Resources/Images/Home/Photos//Nagendran/Nagendran_Logo.jpeg" alt="" class="Nagendran_Logo">
                     <p class="Info Border-Bottom">If you are interested in having a web development tutorial, feel free to contact me via email or social media. We can discuss a payment plan depending on the time span.</p>
                 </div>
+                <a href="https://sites.google.com/drewcharterschools.org/nethannagendran/home" target="_blank" class="detail sitesFont">View recent projects <i class="fa-solid fa-share-from-square"></i></a>
             </div>
 
         </div>
@@ -95,42 +98,68 @@
 
 
             <div class="card-1 card">
-              <img src="/Resources/Images/Home/Photos/Boxes.jpg" alt="" class="Logo">
+                <img src="/Resources/Images/Home/Photos//YMCABag/BagsHelp.jpeg" alt="" class="Logo mySlides">
+                <img src="/Resources/Images/Home/Photos//YMCABag/Bags.jpg" alt="" class="Logo mySlides">
+                <img src="/Resources/Images/Home/Photos/YMCABag/Boxes.jpg" alt="" class="Logo mySlides">                
+
+                <div class="slider-btn">
+                    <button class="navigateBtn navigateLeft" onclick="YMCA(-1)"><i class="fa-solid fa-less-than sliderIcons"></i></button>
+                    <button class="navigateBtn navigateRight" onclick="YMCA(1)"><i class="fa-solid fa-greater-than sliderIcons"></i></button>
+                </div>
+
                 <p class="card-title">East Lake YMCA</p>
-                <p class="basic-info">  ○ <span> Helped set up food bags for distribution..</span></p>
+
+                <p class="basic-info">  ○ <span>Helped set up bags for distribution</span></p>
+
             </div>
 
+
+
+
             <div class="card-2 card">
-              <img src="/Resources/Images/Home/Photos/BagsHelp.jpeg" alt="" class="Logo">
+              <img src="/Resources/Images/Home/Photos//YMCAVoter/Presentation2.jpg" alt="" class="Logo">
               <p class="card-title">East Lake YMCA</p>
-              <p class="basic-info">  ○ <span> Distributed bags to people</span></p>
+                <p class="basic-info">  ○ <span> Helped set up Desks, Chairs for voter registration program.</span></p>
             </div>
+
+
 
 
             <div class="card-3 card">
-              <img src="/Resources/Images/Home/Photos/Bags.jpg" alt="" class="Logo">
+                <img src="/Resources/Images/Home/Photos//MediaMinistry/Img1.JPG" alt="" class="Logo Media">
+                <img src="/Resources/Images/Home/Photos//MediaMinistry/Img2.jpg" alt="" class="Logo Media">
+                <img src="/Resources/Images/Home/Photos//MediaMinistry/selfie1.jpg" alt="" class="Logo Media">
+                <img src="/Resources/Images/Home/Photos//MediaMinistry/Img3.jpg" alt="" class="Logo Media">
+                <img src="/Resources/Images/Home/Photos//MediaMinistry/Img4.jpg" alt="" class="Logo Media">
+                <img src="/Resources/Images/Home/Photos//MediaMinistry/Img5.jpg" alt="" class="Logo Media">
+                <img src="/Resources/Images/Home/Photos//MediaMinistry/Img6.jpg" alt="" class="Logo Media">          
 
-              <p class="card-title">East Lake YMCA</p>
-                <p class="basic-info">  ○ <span>Unboxed food items and helped set into bags.</span></p>
+                <div class="slider-btn">
+                    <button class="navigateBtn navigateLeft" onclick="MediaMinistry(-1)"><i class="fa-solid fa-less-than sliderIcons"></i></button>
+                    <button class="navigateBtn navigateRight" onclick="MediaMinistry(1)"><i class="fa-solid fa-greater-than sliderIcons"></i></button>
+                </div>
+
+                <p class="card-title">Media Ministry - Atlanta Church Of Christ</p>
+
+                <p class="basic-info">  ○ <span>Help livestream session on Zoom,Facebook,Youtube</span></p>
+
             </div>
 
 
             <div class="card-4 card">
-              <img src="/Resources/Images/Home/Photos/Presentation.jpg" alt="" class="Logo">
-              <p class="card-title">East Lake YMCA</p>
-                <p class="basic-info">  ○ <span> Helped for voter registration and election program.</span></p>
+                <img src="/Resources/Images/Home/Photos//KingergardenWalk/Pic2.jpg" alt="" class="Logo Kinder">
+                <img src="/Resources/Images/Home/Photos/KingergardenWalk/Poster.png" alt="" class="Logo Kinder">                
+
+                <div class="slider-btn">
+                    <button class="navigateBtn navigateLeft" onclick="KingerGarden(-1)"><i class="fa-solid fa-less-than sliderIcons"></i></button>
+                    <button class="navigateBtn navigateRight" onclick="KingerGarden(1)"><i class="fa-solid fa-greater-than sliderIcons"></i></button>
+                </div>
+
+                <p class="card-title">Drew - kindergartner Walk</p>
+
+                <p class="basic-info">  ○ <span>Created a poster for my kindergartner which represents her</span></p>
+
             </div>
-
-
-
-            <div class="card-5 card">
-              <img src="/Resources/Images/Home/Photos/Presentation2.jpg" alt="" class="Logo">
-              <p class="card-title">East Lake YMCA</p>
-                <p class="basic-info">  ○ <span> Helped set up Desks,Chairs for elders.</span></p>
-            </div>
-
-
-
 
 
         </div>
@@ -141,4 +170,5 @@
 
 </body>
 <script src="/Back-End/Home-Js/Greet.js"></script>
+<script src="/Back-End/Home-Js/slides.js"></script>
 </html>

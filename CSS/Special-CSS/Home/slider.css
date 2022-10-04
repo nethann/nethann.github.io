@@ -1,0 +1,28 @@
+.slider-btn{
+    background-color: transparent;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+
+}
+
+.navigateBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #9d9d9d29;
+    border: 0px solid transparent;
+    border-radius: 20px;
+    width: 25%;
+    padding: 5px;
+
+    cursor: pointer;
+}
+
+/* SLIDER ICONS IN THE HOME CSS PAGE IF WANTED TO EDIT IN FUTURE */ 
